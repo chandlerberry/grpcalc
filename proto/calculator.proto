@@ -20,5 +20,6 @@ message CalculationResponse {
 }
 
 message NumbersRequest {
-    repeated int64 numbers = 1; // "repeated" keyword means that 
+    // "repeated" keyword tells protobuf to expect a list of zero or more values
+    repeated int64 numbers = 1;
 }
